@@ -64,3 +64,12 @@ function sample() {
 sample()(function () {
   console.log("This is an IIFE.");
 })();
+
+// Predict the Output
+
+for (var a = 0; a < 5; a++) {
+  setTimeout(console.log(a), 100);
+}
+for (let a = 0; a < 5; a++) {
+  setTimeout(console.log(a), 100);
+}
