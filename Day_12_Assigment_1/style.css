@@ -1,0 +1,73 @@
+:root {
+  --primary-grad: linear-gradient(135deg, blueviolet, violet);
+  --btn-grad: linear-gradient(to right, dodgerblue, blue);
+}
+
+body.bg-gradient {
+  background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb);
+  font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.main-title {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+#mainContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+#add-btn,
+.secondary-btn {
+  width: 100%;
+  background: var(--btn-grad);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#add-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.button-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: #444;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
