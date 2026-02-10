@@ -1,43 +1,85 @@
+const eventForm = document.getElementById("eventForm");
 const addBtn = document.getElementById("add-btn");
+const eventContainer = document.getElementById("eventContainer");
+const clearBtn = document.getElementById("clear-btn");
+const sampleBtn = document.getElementById("sample-btn");
 
-let sampleEvent = [
+let sampleEvents = [
   {
-    eventName: "Birthday",
-    eventDate: "2026-02-26",
-    eventDescription: "Happy Birthday!",
-    eventPriority: "Low",
+    name: "Birthday",
+    date: "2026-02-26",
+    category: "Social",
+    description: "Happy Birthday!",
   },
   {
-    eventName: "Freshers",
-    eventDate: "2026-02-28",
-    eventDescription: "Freshers Party",
-    eventPriority: "Low",
+    name: "Freshers",
+    date: "2026-02-28",
+    category: "Social",
+    description: "Freshers Party",
   },
 ];
 
-// const textInput=document.giveElementById("myInput");
-// textInput.addEventListener("change",(event)=>{
-// const inputValue=event.target.value;
-// console.log("Input value:",inputValue);
-// or
+eventForm.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-//here event is targetting the entire element
-//object node and event .target is the element which is being targetting the particular event.
-//     event.preventDefault();
-//     console.log("Input value:",textInput.value);
-//     console.log(event.target.value);
-// });
+  const name = document.getElementById("eventName").value;
+  const date = document.getElementById("eventDate").value;
+  const category = document.getElementById("eventCategory").value;
+  const description = document.getElementById("eventDescription").value;
 
-const form = document.getElementById("formInput");
-const textInput = document.getElementById("myInput");
-const courseInput = document.getElementById("course");
-const output = document.getElementById("demo-box");
+  if (name && date && description) {
+    createEventCard(name, date, category, description);
+    eventForm.reset();
+  } else {
+    alert("Please fill in all fields.");
+  }
+});
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const name = textInput.value;
-  const course = courseInput.value;
-  console.log(name);
+function createEventCard(name, date, category, description) {
+  const emptyMsg = document.querySelector(".empty-msg");
+  if (emptyMsg) emptyMsg.remove();
 
-  output.innerText = name + " " + course;
+  const card = document.createElement("div");
+  card.className = "event-item";
+
+  card.innerHTML = `
+    <h3 style="margin-top:0;">${name}</h3>
+    <small>${category}</small>
+    <p><strong>Date:</strong> ${date}</p>
+    <p>${description}</p>
+  `;
+
+  eventContainer.appendChild(card);
+}
+
+function showEmptyMessage() {
+  eventContainer.innerHTML =
+    '<p class="empty-msg">No events yet. Add your first event!</p>';
+}
+
+addBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  const name = document.getElementById("eventName").value;
+  const date = document.getElementById("eventDate").value;
+  const category = document.getElementById("eventCategory").value;
+  const description = document.getElementById("eventDescription").value;
+
+  if (name && date && description) {
+    createEventCard(name, date, category, description);
+    eventForm.reset();
+  } else {
+    alert("Error: Incomplete data");
+  }
+});
+
+clearBtn.addEventListener("click", () => {
+  if (confirm("Clear all events?")) {
+    showEmptyMessage();
+  }
+});
+
+sampleBtn.addEventListener("click", () => {
+  sampleEvents.forEach((ev) => {
+    createEventCard(ev.name, ev.date, ev.category, ev.description);
+  });
 });
