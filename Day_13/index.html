@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #content {
+        width: 600px;
+        aspect-ratio: 2/1;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 15px;
+        background: linear-gradient(pink, blue);
+        margin: 100px auto;
+        text-align: center;
+        align-content: center;
+        box-shadow: 0 10px 20px;
+        color: white;
+      }
+      #title {
+        font-size: 3em;
+        text-shadow:
+          -1px -1px 0 #000,
+          1px -1px 0 #000,
+          -1px 1px 0 #000,
+          1px 1px 0 #000;
+        font-family: "Poppins", sans-serif;
+      }
+      #status {
+        font-size: 2em;
+        text-shadow:
+          -1px -1px 0 #000,
+          1px -1px 0 #000,
+          -1px 1px 0 #000,
+          1px 1px 0 #000;
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <h1 id="title"></h1>
+      <p id="status"></p>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
