@@ -23,3 +23,11 @@
 10. Difference between setInterval and setTimeout
 11. What is DOM
 12. Difference between getElementById and getElementsByClassName
+13. Difference between innerText, textContent and innerHTML.
+14. DOM Traversal Methods
+15. AddEventListener
+16. What is execution context and call stack.
+17. What is event loop and how it executes asynchronous codes.
+18. What is callback hell, disadvantages of callback hell
+19. Explain the lifecycle of promise and how it manages asynchronous function better than callback hell
+20. What is promise chaining and disadvantages of promise chaining
