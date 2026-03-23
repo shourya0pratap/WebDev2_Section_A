@@ -1,0 +1,17 @@
+.mainHeader {
+  height: 80px;
+  background-color: antiquewhite;
+  color: black;
+  box-shadow: 0px 0px 5px 5px gray;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+li {
+  list-style-type: none;
+}
