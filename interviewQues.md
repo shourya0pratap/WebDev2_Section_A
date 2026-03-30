@@ -31,3 +31,5 @@
 18. What is callback hell, disadvantages of callback hell
 19. Explain the lifecycle of promise and how it manages asynchronous function better than callback hell
 20. What is promise chaining and disadvantages of promise chaining
+21. What is React? Explain the features of React
+22. What is Virtual DOM 
