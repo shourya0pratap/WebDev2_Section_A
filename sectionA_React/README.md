@@ -27,7 +27,7 @@ import { Demo } from "./components/App.jsx";
 - So thats why we shifted to functional components
 
 6. React "Gotchas!"
-- We cannot re render normal variables in JSX
+- We cannot re-render normal variables in JSX
 - Normal variables are treated as constants
 
-7. While handling events, we do not use () as it calls the function immediately
+7. While handling events, we do not use () as it calls the function immediately, instead we just use the function name
