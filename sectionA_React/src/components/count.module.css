@@ -1,0 +1,22 @@
+.btn {
+    width: 150px;
+    aspect-ratio: 2/1;
+    font-size: 2rem;
+    text-shadow: 2px 2px 0.5px black;
+    color: greenyellow;
+    border: 2px solid black;
+    border-radius: 15px;
+    background: linear-gradient(dodgerblue, blue);
+    transition-property: transform, box-shadow;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px black;
+}
+.d {
+    font-family: "Poppins";
+   width: 150px;
+   font-size: 2rem; 
+}
