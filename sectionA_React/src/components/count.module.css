@@ -1,22 +1,34 @@
 .btn {
-    width: 150px;
-    aspect-ratio: 2/1;
-    font-size: 2rem;
-    text-shadow: 2px 2px 0.5px black;
-    color: greenyellow;
-    border: 2px solid black;
-    border-radius: 15px;
-    background: linear-gradient(dodgerblue, blue);
-    transition-property: transform, box-shadow;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
+  width: 150px;
+  aspect-ratio: 2/1;
+  font-size: 2rem;
+  text-shadow: 2px 2px 0.5px black;
+  color: greenyellow;
+  border: 2px solid black;
+  border-radius: 15px;
+  background: linear-gradient(dodgerblue, blue);
+  transition-property: transform, box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 .btn:hover {
-    transform: scale(1.1);
-    box-shadow: 5px 5px 5px black;
+  transform: scale(1.1);
+  box-shadow: 5px 5px 5px black;
+}
+.btn:active {
+  transform: scale(1);
+  box-shadow: none;
 }
 .d {
-    font-family: "Poppins";
-   width: 150px;
-   font-size: 2rem; 
+  font-family: "Poppins";
+  width: 200px;
+  aspect-ratio: 3/1;
+  font-size: 2rem;
+  color: greenyellow;
+  text-align: center;
+  align-content: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  background: linear-gradient(#1a1a1a, #4a4a4a);
+  margin-bottom: 25px;
 }
