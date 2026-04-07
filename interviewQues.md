@@ -30,6 +30,12 @@
 17. What is event loop and how it executes asynchronous codes.
 18. What is callback hell, disadvantages of callback hell
 19. Explain the lifecycle of promise and how it manages asynchronous function better than callback hell
-20. What is promise chaining and disadvantages of promise chaining
+20. What is promise chaining and what are the disadvantages of promise chaining?
 21. What is React? Explain the features of React
-22. What is Virtual DOM 
+22. What is Virtual DOM?
+23. What is SPA? (Single Page Application)
+24. Difference between SPA and MPA
+25. Explain One Way Data Binding in React
+26. How does JSX work in React and what is Babel?
+27. Explain Lifecycle methods and its disadvantages
+28. How to tackle lifecycle methods by using `useEffect()` hook?
