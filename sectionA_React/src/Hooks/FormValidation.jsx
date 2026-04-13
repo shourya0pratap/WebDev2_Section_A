@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function App() {
+export default function App() {
   const [name, setName] = useState("");
 
   return (
@@ -15,4 +15,3 @@ function App() {
   );
 }
 
-export default App;

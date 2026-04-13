@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function () {
+export default function App() {
   const [count, setCount] = useState([0, 0]);
 
   const increment = (index) => {
@@ -12,12 +12,19 @@ export default function () {
   };
   return (
     <div>
-      {count.map((c, key) => {
-        <div key={key}>
-          <h1>Count: {c}</h1>
-          <button onClick={increment(key)}>Click Me</button>
-        </div>;
-      })}
+      {count.map((counter, index) => (
+        <div key={index}>
+          <h1>Count: {counter}</h1>
+          <button
+            onClick={() => {
+              increment(index);
+            }}
+          >
+            Click Me
+          </button>
+        </div>
+      ))}
     </div>
   );
 }
+

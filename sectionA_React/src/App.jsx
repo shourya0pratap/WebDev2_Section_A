@@ -5,7 +5,11 @@ import { add, subtract } from "./components/math.js";
 import Parent from "./propsPassing/Parent.jsx";
 import Ternary from "./conceptComponents/Ternary.jsx";
 import UseState1 from "./Hooks/UseState1.jsx";
-import LightDark from "./Hooks/LightDark.jsx"
+import LightDark from "./Hooks/LightDark.jsx";
+import MultiCounter from "./Hooks/MultiCounter.jsx";
+import FormValidation from "./Hooks/FormValidation.jsx";
+import LoginForm from "./Hooks/LoginForm.jsx";
+import ToDoList from "./Hooks/ToDoList.jsx";
 
 const App = () => {
   return (
@@ -17,7 +21,11 @@ const App = () => {
       {/* <UseState1 />
       <Parent />
       <Ternary /> */}
+      <MultiCounter />
       <LightDark />
+      <FormValidation />
+      <LoginForm />
+      <ToDoList />
     </>
   );
 };
