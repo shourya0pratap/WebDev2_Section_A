@@ -39,3 +39,4 @@
 26. How does JSX work in React and what is Babel?
 27. Explain Lifecycle methods and its disadvantages
 28. How to tackle lifecycle methods by using `useEffect()` hook?
+29. Controlled vs Uncontrolled component

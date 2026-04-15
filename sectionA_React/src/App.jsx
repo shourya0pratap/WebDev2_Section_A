@@ -10,22 +10,24 @@ import MultiCounter from "./Hooks/MultiCounter.jsx";
 import FormValidation from "./Hooks/FormValidation.jsx";
 import LoginForm from "./Hooks/LoginForm.jsx";
 import ToDoList from "./Hooks/ToDoList.jsx";
+import Toggle from "./Hooks/Toggle.jsx";
 
 const App = () => {
   return (
     <>
       {/* {add(33, 34)}
-      {subtract(100, 33)} */}
-      {/* <Navbar />
-      <h1>Hello World</h1> */}
-      {/* <UseState1 />
+      {subtract(100, 33)}
+      <Navbar />
+      <h1>Hello World</h1>
+      <UseState1 />
       <Parent />
-      <Ternary /> */}
+      <Ternary />
       <MultiCounter />
       <LightDark />
       <FormValidation />
       <LoginForm />
-      <ToDoList />
+      <ToDoList /> */}
+      <Toggle />
     </>
   );
 };
