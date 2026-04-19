@@ -44,8 +44,9 @@ import { Demo } from "./components/App.jsx";
   - Hooks should only be called at the top level. They shouldn't be used inside loops, conditions and nested functions.
   ```jsx
   export default function Component() {
-  const [c , updateC] = useState(0);
-  // Rest of the code
+    const [c, updateC] = useState(0);
+    // Rest of the code
   }
   ```
+
   - Hooks should only be called from React functions
