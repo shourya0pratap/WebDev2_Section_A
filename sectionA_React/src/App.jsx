@@ -26,8 +26,9 @@ const App = () => {
       <LightDark />
       <FormValidation />
       <LoginForm />
-      <ToDoList /> */}
-      <Toggle />
+      <ToDoList /> 
+      <Toggle /> */}
+      <FormValidation />
     </>
   );
 };

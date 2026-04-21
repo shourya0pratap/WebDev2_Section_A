@@ -42,6 +42,7 @@ import { Demo } from "./components/App.jsx";
 - Hooks allow us to use state and other features without writing a class
 - Two rules to use hooks:
   - Hooks should only be called at the top level. They shouldn't be used inside loops, conditions and nested functions.
+
   ```jsx
   export default function Component() {
     const [c, updateC] = useState(0);
@@ -50,3 +51,13 @@ import { Demo } from "./components/App.jsx";
   ```
 
   - Hooks should only be called from React functions
+
+## useEffect
+
+It is used to manage all the lifecycle methods alone.  
+It will take two parameters: callback function and dependency array
+```jsx
+useEffect(() => {}, []);
+```
+If the dependency array is empty, the useEffect will only run once, when the page is rendered for the first time
+
